@@ -16,4 +16,9 @@ class Api::SongsController < ApplicationController
       description: params[:description],
       audio_link: params[:audio_link],
     )
+    if @song.save
+      render "show.json.jb"
+    else
+      render json: { errors: @song.errors.full_messages }, status: 406
+    end
 end
