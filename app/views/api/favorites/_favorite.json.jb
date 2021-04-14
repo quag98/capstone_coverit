@@ -1,0 +1,6 @@
+{
+  id: favorite.id,
+  song_id: song.id,
+  artist_id: artist.id,
+  user_id: user.id,
+}

@@ -2,7 +2,7 @@ class Api::ArtistsController < ApplicationController
   def show
     id_search = params["id"]
     @artist = Artist.find_by(id: id_search)
-    render show.json.jb
+    render "show.json.jb"
   end
 
   def create
