@@ -1,0 +1,6 @@
+{
+  id: song.id,
+  title: song.title,
+  description: song.description,
+  audio_link: song.audio_link,
+}
