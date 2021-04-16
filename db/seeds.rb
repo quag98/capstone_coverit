@@ -4,4 +4,5 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Song.create(title: "biebs in the trap", description: "Travis Scott - bird in a cage", audio_link: "https://www.youtube.com/watch?v=65zizUXs9iU", artist_id: 1)
+# Artist.create!(name: "Travis Scott", song_id: 1)

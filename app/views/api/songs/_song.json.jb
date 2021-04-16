@@ -3,4 +3,5 @@
   title: song.title,
   description: song.description,
   audio_link: song.audio_link,
+  artist_id: song.artist_id,
 }
