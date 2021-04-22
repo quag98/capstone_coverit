@@ -1,6 +1,6 @@
 {
   id: favorite.id,
-  song_id: song.id,
-  artist_id: artist.id,
-  user_id: user.id,
+  song_id: favorite.song_id,
+  artist_id: favorite.artist_id,
+  user_id: favorite.user_id,
 }

@@ -13,7 +13,7 @@ class Api::ArtistsController < ApplicationController
     if @artist.save
       render "show.json.jb"
     else
-      render json: { errors: @artis.errors.full_message }, status: 406
+      render json: { errors: @artist.errors.full_message }, status: 406
     end
   end
 
