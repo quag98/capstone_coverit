@@ -1,4 +1,6 @@
 class Api::FavoritesController < ApplicationController
+  before_action :authenticate_user
+
   def index
     @favorites = Favorite.all
     render "index.json.jb"
@@ -8,7 +10,7 @@ class Api::FavoritesController < ApplicationController
     @favorite = Favorite.new(
       song_id: params[:song_id],
       artist_id: params[:artist_id],
-      user_id: params[:user_id],
+      user_id: current_user.id,
     )
   end
 
